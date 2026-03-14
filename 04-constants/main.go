@@ -12,6 +12,10 @@ func main() {
 
 	const n = 500000000
 
+	// n = 123 // This would cause a compile error since constants cannot be reassigned
+	// s = "other" // This would also cause a compile error since constants cannot be reassigned
+
+	// 3e20 é notação científica → 3 x 10^{20}
 	const d = 3e20 / n
 	fmt.Println(d)
 
